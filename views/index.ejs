@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .registration-form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+      }
+      .registration-form h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: center;
+      }
+      .registration-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      .registration-form input[type="text"],
+      .registration-form input[type="email"],
+      .registration-form input[type="password"],
+      .registration-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      .registration-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .registration-form button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="registration-form" method="post" action="/create">
+
+      <h2>instgram Signup</h2>
+
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your full name"
+        required
+      />
+
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="userName"
+        placeholder="Choose a username"
+        required
+      />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email address"
+        required
+      />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Create a password"
+        required
+      />
+
+      <label for="bio">Bio:</label>
+      <textarea
+        id="bio"
+        name="bio"
+        placeholder="Tell us something about yourself"
+        rows="4"
+      ></textarea>
+
+      <button type="submit">Signup</button>
+
+      <li><a href="/login">Login </a></li>
+    </form>
+
+    
+  </body>
+</html>
